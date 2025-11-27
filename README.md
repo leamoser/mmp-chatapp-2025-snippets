@@ -230,7 +230,6 @@ const socket = io({
 
 ### 14
 ```js
-// auch nur machen wenn verbunden
     if (!socket.recovered) {
         try {
             const stmt = db.prepare('SELECT id, msg, username FROM messages WHERE id > ?');
